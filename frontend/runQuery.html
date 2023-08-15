@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/shopping.png">
+	<link rel="stylesheet" href="styleTable.css">
+	<title>Query</title>
+</head>
+
+<body style="
+color: white;
+background: #000428;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #004e92, #000428);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #004e92, #000428);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ background-repeat: no-repeat;
+	background-attachment: fixed;">
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">Price History</label>
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./table.html">Tables</a></li>
+			<li><a class="currentPage" href="#">Run Query</a></li>
+			<li><a href="./delete.html">Delete</a></li>
+			<li><a class="active" href="./getProductPrice.html">Check Price</a></li>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./register.html">Login/SignUp</a></li>
+		</ul>
+	</nav>
+
+	<center>
+		<div id="tables">
+			<form action="" method="get" class="form-horizontal">
+				<!-- <fieldset> -->
+
+				<!-- Form Name -->
+
+				<legend>
+					<h1 style="margin-top: 2rem;
+					margin-bottom: 1rem;">Type your query</h1>
+				</legend>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<!-- <label class="col-md-4 control-label" for="execQuery">Query</label> -->
+					<div class="col-md-4">
+						<input style="width: 30rem; padding: 1rem;" id="execQuery" name="execQuery" type="text"
+							placeholder="Enter query" class="mySelect" required="">
+						<input style="margin-left: 1rem;" class="myButton" type="button" value="Run"
+							onclick="get_data()">
+
+					</div>
+				</div>
+
+				<!-- Submit button -->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="prod_name"></label>
+					<div class="col-md-4">
+
+					</div>
+				</div>
+
+				<!-- </fieldset> -->
+			</form><br>
+			<p id='showData'></p>
+		</div>
+	</center>
+
+	<script src="./runQuery.js">
+        // get_data();/
+	</script>
+</body>
+
+</html>

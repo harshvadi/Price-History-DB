@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/shopping.png">
+    <link rel="stylesheet" href="./styleMain.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <title>Delete</title>
+
+</head>
+
+<body style="height: 100%;
+color: white;
+margin: 0;
+background-image: linear-gradient(to top, #93abc6 0%, #e7f0fd 100%);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Price History</label>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./table.html">Tables</a></li>
+            <li><a href="./runQuery.html">Run Query</a></li>
+            <li><a class="currentPage" href="./delete.html">Delete</a></li>
+            <li><a class="active" href="./getProductPrice.html">Check Price</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./register.html">Login/SignUp</a></li>
+        </ul>
+    </nav>
+
+    <center>
+        <div id="tables">
+            <form action="" method="get" class="form-horizontal">
+                <!-- <fieldset> -->
+
+                <!-- Form Name -->
+                <legend>
+                    <h1 style="margin-top: 2rem;
+                    margin-bottom: 1rem;">Delete Customer</h1>
+                </legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <!-- <label class="col-md-4 control-label" for="c_id">ID</label> -->
+                    <div class="col-md-4">
+                        <input style="padding: 1rem;" id="c_id" name="c_id" type="number" placeholder="Enter ID"
+                            class="mySelect" required="">
+                        <input style="margin-left: 1rem;" class="myButton" type="button" value="Delete"
+                            onclick="deleteData()">
+                    </div>
+                </div>
+
+
+                <!-- Text input -->
+                <!-- <div class="form-group">
+                    <label class="col-md-4 control-label" for="c_name">Name</label>
+                    <div class="col-md-4">
+                        <input id="c_name" name="c_name" type="text" placeholder="Enter name"
+                            class="form-control input-md" required="">
+
+                    </div>
+                </div> -->
+
+                <!-- Text input-->
+                <!-- <div class="form-group">
+                    <label class="col-md-4 control-label" for="c_email">Email</label>
+                    <div class="col-md-4">
+                        <input id="c_email" name="c_email" type="text" placeholder="Enter email"
+                            class="form-control input-md" required="">
+
+                    </div>
+                </div> -->
+
+                <!-- Password input-->
+                <!-- <div class="form-group">
+                    <label class="col-md-4 control-label" for="c_password">Password</label>
+                    <div class="col-md-4">
+                        <input id="c_password" name="c_password" type="password" placeholder="Enter password"
+                            class="form-control input-md" required="">
+
+                    </div>
+                </div> -->
+
+                <!-- Text input-->
+                <!-- <div class="form-group">
+                    <label class="col-md-4 control-label" for="c_address">Address</label>
+                    <div class="col-md-4">
+                        <input id="c_address" name="c_address" type="text" placeholder="Enter address"
+                            class="form-control input-md" required="">
+
+                    </div>
+                </div> -->
+
+                <!-- Submit button -->
+                <div class="form-group">
+                    <div class="col-md-4"><br>
+
+                    </div>
+                </div>
+
+                <!-- </fieldset> -->
+            </form><br>
+            <p id="user"></p>
+            <p id='showData'></p>
+
+        </div>
+    </center>
+
+
+    <script src="delete.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

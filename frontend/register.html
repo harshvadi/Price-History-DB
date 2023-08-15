@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/shopping.png">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Register</title>
+
+</head>
+
+<body>
+  <main>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Price History</label>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./table.html">Tables</a></li>
+        <li><a href="./runQuery.html">Run Query</a></li>
+        <li><a href="./delete.html">Delete</a></li>
+        <li><a class="active" href="./getProductPrice.html">Check Price</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a class="currentPage" href="./register.html">Login/SignUp</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="left">
+        <h1>Price History</h1>
+        <p>Place to track the prices of all your favourite products.</p>
+        <p>Try, Analyze, Get Notified & Save a lot</p>
+      </div>
+      <div class="right">
+        <button class="btn" id="btn"><span>Try premium free for 7 days,</span> $20/month thereafter</button>
+        <form action="" id="register">
+          <div class="input-container">
+            <input type="text" placeholder="Unique ID" id="c_id">
+            <img src="images/icon-error.svg" alt="">
+            <p>ID cannot be empty</p>
+          </div>
+          <div class="input-container">
+            <input type="text" placeholder="Name" id="c_name">
+            <img src="images/icon-error.svg" alt="">
+            <p>Name cannot be empty</p>
+          </div>
+          <div class="input-container">
+            <input type="email" placeholder="Email Address" id="c_email">
+            <img src="images/icon-error.svg" alt="">
+            <p class="error">Looks like this is not an email</p>
+          </div>
+          <div class="input-container">
+            <input type="password" placeholder="Password" id="c_password">
+            <img src="images/icon-error.svg" alt="">
+            <p>Password cannot be empty</p>
+            <div class="input-container">
+              <input type="text" placeholder="Address" id="c_address">
+              <img src="images/icon-error.svg" alt="">
+              <p>Address cannot be empty</p>
+            </div>
+          </div>
+          <p id="registered" style="color: green;"></p>
+          <p id="failure" style="color: red;"></p>
+          <input type="button" id="submit-btn" style="background-color: hsl(154, 59%, 51%);
+          color: #fff;
+          text-transform: uppercase;
+          border: 0;
+          outline: 0;
+          cursor: pointer;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          box-shadow: 0 -4px 0px 0 rgb(73 73 73 / 23%) inset;
+          margin: 0.5rem 0;
+          margin-bottom: 0.5rem;
+          font-weight: 500;
+          transition: 0.3s;" onclick="insertData()" value="Register">
+          <!-- <a href="./signin.html">login</a> -->
+          <input type="button" style="background-color: hsl(154, 59%, 51%);
+        color: #fff;
+        text-transform: uppercase;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 -4px 0px 0 rgb(73 73 73 / 23%) inset;
+        margin: 0rem 0;
+        margin-bottom: 0.1rem;
+        font-weight: 500;
+        transition: 0.3s;" value="Already Registered? LogIn" onClick="location.href='./signin.html'">
+          <!-- <button id="submit-btn" onclick="window.location.href = path.join(__dirname + "">LogIn</button> -->
+          <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+        </form>
+        <p id="showData"></p>
+      </div>
+    </div>
+  </main>
+  <script src="register.js"></script>
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

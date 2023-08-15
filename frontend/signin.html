@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=h, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/shopping.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>LogIn</title>
+</head>
+<main>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Price History</label>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./table.html">Tables</a></li>
+      <li><a href="./runQuery.html">Run Query</a></li>
+      <li><a href="./delete.html">Delete</a></li>
+      <li><a class="active" href="./getProductPrice.html">Check Price</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a class="currentPage" href="./register.html">Login/SignUp</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="left">
+      <h1>Price History</h1>
+      <p>Place to track the prices of all your favourite products.</p>
+      <p>Try, Analyze, Get Notified & Save</p>
+    </div>
+    <div class="right">
+      <button class="btn" id="btn"><span>Try premium free for 7 days,</span> $20/month thereafter</button>
+      <form action="">
+        <div class="input-container">
+          <input type="email" placeholder="Email Address" name="email">
+          <img src="images/icon-error.svg" alt="">
+          <p class="error">Looks like this is not an email</p>
+        </div>
+        <div class="input-container">
+          <input type="password" placeholder="Password" name="password">
+          <img src="images/icon-error.svg" alt="">
+          <p>Password cannot be empty</p>
+        </div>
+        <button type="submit" id="submit-btn">LogIn</button>
+        <input type="button" style="background-color: hsl(154, 59%, 51%);
+        color: #fff;
+        text-transform: uppercase;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 -4px 0px 0 rgb(73 73 73 / 23%) inset;
+        margin: 0.1rem 0;
+        margin-bottom: 0.1rem;
+        font-weight: 500;
+        transition: 0.3s;" value="Don't have an account? Register Here" onClick="location.href='./register.html'">
+        <!-- <button type="submit" id="submit-btn">Don't have an account? Register Here</button> -->
+      </form>
+    </div>
+  </div>
+</main>
+
+</html>
